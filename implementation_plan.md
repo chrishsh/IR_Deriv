@@ -8,6 +8,7 @@ This plan outlines the theoretical framework, step-by-step mathematical methodol
 
 ### 1.1 Post-LIBOR Paradigm & The SOFR Framework
 Following global reference rate reform, the Secured Overnight Financing Rate (**SOFR**) established by the Federal Reserve Bank of New York replaced USD LIBOR as the primary risk-free benchmark for USD derivatives. 
+- **Single-Curve vs. Multi-Curve**: In the legacy LIBOR era, dual-curve bootstrapping was mandatory (LIBOR for floating leg projections, OIS/Fed Funds for discounting). In the SOFR ecosystem, SOFR OIS swaps pay fixed rates versus daily compounded SOFR. Consequently, the SOFR curve serves as **both** the discounting curve and the projection curve.
 
 ### 1.2 Fixed vs. Floating Leg Valuation
 A standard fixed-for-floating USD SOFR Overnight Index Swap (OIS) has two legs:
