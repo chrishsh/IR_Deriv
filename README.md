@@ -1,6 +1,5 @@
-# USD Interest Rate Swap (SOFR) Bootstrapping Implementation Plan
-
-This plan outlines the theoretical framework, step-by-step mathematical methodology, user-configurable Reference Date entry point, dynamic data binding, multi-horizon curve analytics (Weekly, Monthly, Annual, YTD), multi-library visualizations (`plotly`, `matplotlib`, `seaborn`), and Jupyter Notebook layout structure for bootstrapping a USD Secured Overnight Financing Rate (SOFR) yield and discount curve.
+# USD Interest Rate Swap (SOFR) Bootstrapping Process (
+This README outlines the theoretical framework, step-by-step mathematical methodology, user-configurable Reference Date entry point, dynamic data binding, multi-horizon curve analytics (Weekly, Monthly, Annual, YTD), multi-library visualizations (`plotly`, `matplotlib`, `seaborn`), and Jupyter Notebook (SOFR_Swap_Curve_Bootstrapping.ipynb) layout structure for bootstrapping a USD Secured Overnight Financing Rate (SOFR) yield and discount curve.
 
 ---
 
@@ -57,11 +56,3 @@ To ensure that Jupyter Notebook's built-in **Table of Contents / Outline Sidebar
 17. **Code Cell 17**: Plotly Interactive Dashboard, Seaborn Heatmaps, and Matplotlib Multi-Panel Plot
 18. **Markdown Cell 18**: `## 10. Key Analytical Findings & Practical Applications`
 
----
-
-## 3. Verification Plan
-
-### Automated Tests
-1. **Jupyter Outline Verification**: Inspect generated `.ipynb` file to confirm all 10 Markdown header cells exist and display in Jupyter Table of Contents.
-2. **Top-to-Bottom Cell Execution**: Execute all 18 cells (9 Markdown cells + 9 Code cells) in Python.
-3. **Documentation Sync**: Update [walkthrough.md](file:///Users/chrishsieh/.gemini/antigravity/brain/4b3af5f1-8c0e-43b6-8478-8dba4a356ca8/walkthrough.md) with the new cell layout.
