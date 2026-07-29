@@ -1,4 +1,4 @@
-# USD Interest Rate Swap (SOFR) Bootstrapping Process (
+# USD Interest Rate Swap (SOFR) Bootstrapping Process
 This README outlines the theoretical framework, step-by-step mathematical methodology, user-configurable Reference Date entry point, dynamic data binding, multi-horizon curve analytics (Weekly, Monthly, Annual, YTD), multi-library visualizations (`plotly`, `matplotlib`, `seaborn`), and Jupyter Notebook (SOFR_Swap_Curve_Bootstrapping.ipynb) layout structure for bootstrapping a USD Secured Overnight Financing Rate (SOFR) yield and discount curve.
 
 ---
