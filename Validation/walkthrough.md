@@ -1,25 +1,29 @@
 # Walkthrough: USD Interest Rate Swap Bootstrapping Framework
 
-We have updated the Jupyter Notebook [SOFR_Swap_Curve_Bootstrapping.ipynb](file:///Users/chrishsieh/Library/CloudStorage/OneDrive-Personal/CodingProjects/Antigravity/IR_Deriv/SOFR_Swap_Curve_Bootstrapping.ipynb) with:
-1. **Unbroken Sequential Outline (Sections 1-10)**: Clean, logical section numbering across all markdown headers and code cells.
-2. **User Entry Point Parameter (`USER_REFERENCE_DATE`)**: Added a top-level reference date parameter (`USER_REFERENCE_DATE = "2026-07-29"`, or any historical date like `"2025-10-15"`).
-3. **Dynamic Variable Data Ingestion**: Replaced hardcoded constants with dynamic FRED API yield extraction and dynamic historical date offset calculations relative to the reference date.
-4. **Multi-Horizon Tracking & Multi-Package Visualizations**: Computes Weekly, Monthly, Annual, and YTD changes (in basis points `bps`) and renders charts using `plotly`, `seaborn`, and `matplotlib`.
+We have updated the Jupyter Notebook [SOFR_Swap_Curve_Bootstrapping.ipynb](file:///Users/chrishsieh/Library/CloudStorage/OneDrive-Personal/CodingProjects/Antigravity/IR_Deriv/SOFR_Swap_Curve_Bootstrapping.ipynb) to include **dedicated Markdown header cells for all 10 sections**, ensuring complete visibility in Jupyter Notebook's built-in Table of Contents / Outline sidebar.
 
 ---
 
-## 1. Sequential Notebook Outline (Sections 1 to 10)
+## 1. Complete Jupyter Outline Structure (18 Cells Total)
 
-- **Section 1**: Executive Summary & Market Context
-- **Section 2**: Mathematical Framework & Hand-Calculated Step-by-Step Walkthrough
-- **Section 3**: User Entry Point & Dynamic Data Ingestion Engine
-- **Section 4**: Bootstrapping Core Engine Class (`SOFRSwapCurveBootstrapper`)
-- **Section 5**: Single-Curve Bootstrapping & Table Output
-- **Section 6**: Yield & Discount Curve Visualization Dashboard
-- **Section 7**: Arbitrage-Free Par Swap Re-Pricing Verification
-- **Section 8**: Multi-Horizon Historical Change Analysis (Weekly, Monthly, Annual, YTD)
-- **Section 9**: Multi-Package Visualizations (`plotly`, `seaborn`, `matplotlib`)
-- **Section 10**: Key Analytical Findings & Practical Applications
+1. **Markdown Cell 1**: `# USD Interest Rate Swap (SOFR) Bootstrapping Framework` & `## 1. Executive Summary & Market Context`
+2. **Markdown Cell 2**: `## 2. Mathematical Framework & Hand-Calculated Step-by-Step Walkthrough`
+3. **Code Cell 3**: Environment Setup & Self-Healing Library Installer (`plotly`, `seaborn`, etc.)
+4. **Markdown Cell 4**: `## 3. User Entry Point & Dynamic Data Ingestion Engine`
+5. **Code Cell 5**: Parameter `USER_REFERENCE_DATE = "2026-07-29"` & Dynamic FRED API Ingestion
+6. **Markdown Cell 6**: `## 4. Bootstrapping Core Engine Class`
+7. **Code Cell 7**: `SOFRSwapCurveBootstrapper` Class Implementation
+8. **Markdown Cell 8**: `## 5. Single-Curve Bootstrapping & Table Output`
+9. **Code Cell 9**: Bootstrapping Execution & Summary DataFrame Output
+10. **Markdown Cell 10**: `## 6. Yield & Discount Curve Visualization Dashboard`
+11. **Code Cell 11**: Matplotlib Discount Factor, Zero Rate, and 1Y Forward Curve Dashboard
+12. **Markdown Cell 12**: `## 7. Arbitrage-Free Par Swap Re-Pricing Verification`
+13. **Code Cell 13**: Par Swap Re-Pricing Net Error Verification Table
+14. **Markdown Cell 14**: `## 8. Multi-Horizon Historical Change Analysis (Weekly, Monthly, Annual, YTD)`
+15. **Code Cell 15**: Multi-Date Historical Horizon Extraction & Basis Point Changes Calculation
+16. **Markdown Cell 16**: `## 9. Multi-Package Visualizations (Plotly, Seaborn, Matplotlib)`
+17. **Code Cell 17**: Plotly Interactive HTML Dashboard, Seaborn Heatmaps, and Matplotlib Multi-Panel Plot
+18. **Markdown Cell 18**: `## 10. Key Analytical Findings & Practical Applications`
 
 ---
 
@@ -75,15 +79,7 @@ When `USER_REFERENCE_DATE` is changed and the notebook is executed:
 
 ---
 
-## 5. Visualizations
-
-- **Plotly Interactive HTML**: [sofr_plotly_interactive.html](file:///Users/chrishsieh/Library/CloudStorage/OneDrive-Personal/CodingProjects/Antigravity/IR_Deriv/sofr_plotly_interactive.html)
-- **Seaborn Heatmap**: `sofr_term_structure_changes_seaborn.png`
-- **Matplotlib Dashboard**: `sofr_term_structure_changes_matplotlib.png`
-
----
-
-## 6. Deliverable Files
+## 5. Deliverable Files
 
 - **Jupyter Notebook**: [SOFR_Swap_Curve_Bootstrapping.ipynb](file:///Users/chrishsieh/Library/CloudStorage/OneDrive-Personal/CodingProjects/Antigravity/IR_Deriv/SOFR_Swap_Curve_Bootstrapping.ipynb)
 - **Interactive Plotly HTML**: [sofr_plotly_interactive.html](file:///Users/chrishsieh/Library/CloudStorage/OneDrive-Personal/CodingProjects/Antigravity/IR_Deriv/sofr_plotly_interactive.html)
